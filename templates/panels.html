@@ -1,5 +1,12 @@
+<style>
+  .panel {border:1px solid silver;background:#ccc;margin-bottom:1em;padding:.5em}
+</style>
 
-hi hi
+<div>
+  <button name="addPanel" (click)="add({type:'datasources'})">Add panel datasource</button>
+  <button name="addPanel" (click)="add({type:'pipelines'})">Add panel pipelines</button>
+</div>
+
 <div *foreach="#panel in panelsContainer.panelsList">
   <div>
     {{panel.type}}
